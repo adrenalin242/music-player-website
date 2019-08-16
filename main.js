@@ -8,7 +8,7 @@ app.controller("mainCtrl",function($scope, $http) {
                 client_id: 'b1d604e6c71ffb73a022a80766d869f1'
             });
     $scope.search = function() {
-        $http({ url: "http://api.soundcloud.com/tracks/", 
+        $http({ url: "https://api.soundcloud.com/tracks/", 
             params: {
                 q: $scope.seach_input,
                 client_id: $scope.client_id,
