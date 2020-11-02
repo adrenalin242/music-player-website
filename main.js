@@ -1,11 +1,11 @@
 app.controller("mainCtrl",function($scope, $http) {
     $scope.seach_input = localStorage.getItem("textvalue");
-    $scope.client_id = "2t9loNQH90kzJcsFCODdigxfp325aq4z";
+    $scope.client_id = "fd4e76fc67798bfa742089ed619084a6";
     $scope.limit = 100;
     $scope.tracks = [];
     var is_playing=false;
     SC.initialize({
-                client_id: '2t9loNQH90kzJcsFCODdigxfp325aq4z'
+                client_id: 'fd4e76fc67798bfa742089ed619084a6'
             });
     $scope.search = function() {
         $http({ url: "https://api.soundcloud.com/tracks/", 
